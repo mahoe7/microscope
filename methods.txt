@@ -1,0 +1,17 @@
+if(Meteor.isClient) {
+
+	Template.leaderboard.helpers({
+		'post': function() {
+			//code for info
+			Meteor.call('addPost', info);
+		}
+	});
+}
+
+if(Meteor.isServer) {
+	Meteor.methods({
+		'addPost': function() {
+			//code to add a post
+		}
+	});
+}
